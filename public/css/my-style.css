@@ -1,0 +1,478 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+/* 
+    Created on : 22 avr. 2019, 20:40:02
+    Author     : lam3allam
+*/
+
+/*****************************************************************************/
+
+@media only screen and (max-width: 640px) {
+            
+      .chat {
+            margin-top: 1em !important;
+            height: 500px !important;     
+            margin-bottom:130px !important;
+      }
+      .card.card-mobile {
+            height: 480px !important;
+      }
+      .card.card-mobile-reset {
+            height: 240px !important;
+      }     
+      .card {
+            margin-bottom: -70px !important;
+            height: 620px !important;
+      }
+      #navbarDropdown, #navbarSupportedContent {
+            margin-right: 45px;
+      }
+      .navbar-toggler-icon {
+            margin-right: 45px;
+      }
+}
+
+@media only screen and (min-width: 1440px) {
+      /* Ecran burau md + lg */
+      .contenu {
+            padding-right: 100px;
+            padding-left: 100px;
+      }
+}
+
+/*****************************************************************************/
+
+body,html {
+      height: 100%;
+      margin: 0;
+      background: #7F7FD5;
+      background: -webkit-linear-gradient(to right, #d0211c, #000, #d0211c);
+      background: linear-gradient(to bottom, #000, #d0211c, #000);      
+}
+
+.loader-button {
+      border: 2px solid #f3f3f3; /* Light grey */
+      border-top: 2px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      animation: spin 2s linear infinite;
+}
+
+.invalid-feedback {
+      color: #eeeeee;
+}
+
+.btn.btn-primary.toggle-on {
+      background-color: #f4b0af !important;
+      color: black !important;
+}
+
+/***************************** MODAL ************************************/
+.modal-content, .modal-content input[type=text] {
+      background-color: rgba(0,0,0,0.4) !important;
+      color : whitesmoke !important;      
+}
+
+.modal-content input[type=text] {
+      border-radius: 18px;
+}
+
+#button { 
+      padding: .5em 1em; 
+      text-decoration: none; 
+}
+#effect {
+      width: 100px; 
+      height: 90px;
+      padding: 0.4em;
+      position: relative;
+      background-color:rgba(0,0,0,0.4) ; 
+      border-radius: 16px;
+      text-align: center;
+      left: 0;      
+      padding-top: 16%; 
+      display: none;
+}
+#effect h3 { 
+      margin: 0; 
+      padding: 0.4em; 
+      text-align: center; 
+}
+.toggler {
+      left:50%;
+      top:50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      position:absolute;      
+      background-color: transparent !important;
+      width: max-content; 
+      height: 200px; 
+      z-index: 111;
+}
+
+/*********************** A HREF SANS SOULIGNE ****************/
+
+a:link {
+  text-decoration: none !important;
+}
+
+a:visited {
+  text-decoration: none !important;
+}
+
+/****************************** LOADER *******************************/
+
+.loader {
+  border: 8px solid #ccc; /* Light grey */
+  border-top: 8px solid #d0211c; /* Blue */
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+button:active {outline:0;}
+
+/******************* REDEFINITION BOOTSTRAP ****************/
+
+.btn {
+      border-radius: 96px !important;
+}
+
+.text-primary {
+      color: #bd2130 !important;
+}
+
+.btn-primary {
+      background-color: #bd2130 !important;
+      border: 1px #d0211c !important;
+      border-radius: 15px;
+}
+
+.btn-primary:hover {
+      background-color: maroon !important;
+      border: 1px solid #bd2130 !important;
+}
+
+/**************************** ROOM *********************************/
+#room_prive {
+      background-color: rgba(0,0,0,0.4) !important;
+      border: none;
+      border-radius: 15px 15px !important;             
+}
+
+/***********************************************************************/
+
+.btn-primary:active {
+      background-color: #bd2130 !important;
+      border: none !important;
+}
+
+.dropdown-item {
+      background:  #d0211c; 
+      color: white;
+      font-weight: bold;
+}
+
+.dropdown-item:hover {
+      background: #d0211c;
+      color: black;
+      font-weight: bold;
+}
+
+.form-control search {
+      color: whitesmoke;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ccc !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ccc !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ccc !important;
+}
+
+
+.navbar-toggle.collapsed {
+    background-color: #000 !important;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #000 !important;
+}
+.dropdownmenu.dropdown-toggle {
+      background: url(http://yourwebsite.com/wp-content/themes/zerif-pro/images/menu-icon.png) center center no-repeat #000 !important;
+}
+
+input[type=text] {
+      color: whitesmoke;
+}
+
+
+.navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #ffffff;
+}
+
+.navbar-laravel {      
+      background: linear-gradient(to right,  #000, #d0211c);
+}
+
+.nav-link {
+      font-family: Nunito, sans-serif;; 
+      font-size: 20px; 
+      font-weight: bold;
+      color: whitesmoke !important;
+}
+
+a.navbar-brand  {
+      font-family: Nunito, sans-serif;; 
+      font-size: 20px; 
+      color: whitesmoke;
+}
+
+.chat {
+        margin-top: auto;
+        margin-bottom: auto;
+        max-height: 700px;
+        margin-right: 0;
+        margin-left: 0;
+}
+.card {
+        height:  780px;
+        margin-bottom: 10px;
+        border-radius: 15px !important;
+        background-color: rgba(0,0,0,0.4) !important;
+}
+.contacts_body {
+        padding:  0.75rem 0 !important;
+        overflow-y: auto;
+        white-space: nowrap;
+}
+.msg_card_body {
+        overflow-y: auto;
+}
+.card-header {
+        border-radius: 15px 15px 0 0 !important;
+        border-bottom: 0 !important;
+}
+.card-footer {
+       border-radius: 0 0 15px 15px !important;
+               border-top: 0 !important;
+}
+.container {
+        align-content: center;
+        width: 100%;
+}
+.search {
+        border-radius: 15px 0 0 15px !important;
+        background-color: rgba(0,0,0,0.3) !important;
+        border:0 !important;
+        color:white !important;
+}
+.my-input-texte {
+        border-radius: 15px 15px !important;
+        background-color: rgba(0,0,0,0.3) !important;
+        border:0 !important;
+        color:white !important;
+}
+.search:focus {
+     box-shadow:none !important;
+      outline:0px !important;
+}
+.type_msg {
+      background-color: transparent !important;
+      border:0 !important;
+      color:white !important;
+      height: 60px !important;
+      overflow-y: auto;
+}
+.type_msg:focus {
+      box-shadow:none !important;
+      outline:0px !important;
+}
+.attach_btn {
+      border-radius: 15px 0 0 15px !important;
+      background-color: rgba(0,0,0,0.3) !important;
+      border:0 !important;
+      color: white !important;
+      cursor: pointer;
+}
+.send_btn {
+      border-radius: 0 15px 15px 0 !important;
+      background-color: rgba(0,0,0,0.3) !important;
+      border:0 !important;
+      color: white !important;
+      cursor: pointer;
+}
+.search_btn {
+        border-radius: 0 15px 15px 0 !important;
+        background-color: rgba(0,0,0,0.3) !important;
+        border:0 !important;
+        color: white !important;
+        cursor: pointer;
+}
+.contacts {
+        list-style: none;
+        padding: 0;
+}
+.contacts li {
+        width: 100% !important;
+        padding: 5px 10px;
+        margin-bottom: 15px !important;
+}
+.active {
+      background-color: rgba(0,0,0,0.3);
+}
+.user_img {
+        height: 70px;
+        width: 70px;
+        border:1.5px solid #f5f6fa;
+}
+.user_img_msg {
+        height: 40px;
+        width: 40px;
+        border:1.5px solid #f5f6fa;
+
+}
+.img_cont {
+      position: relative;
+      height: 70px;
+      width: 70px;
+}
+.img_cont_msg {
+      height: 40px;
+      width: 40px;
+}
+.online_icon {
+        position: absolute;
+        height: 18px;
+        width:18px;
+        background-color: #4cd137;
+        border-radius: 50%;
+        bottom: 0.2em;
+        right: 0;
+        border:1.5px solid white;
+}
+.offline {
+        background-color: #c23616 !important;
+}
+.user_info {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 15px;
+}
+.user_info span {
+        font-size: 20px;
+        color: white;
+}
+.user_info p {
+      font-size: 10px;
+      font-weight: bold;
+      color: #EEE;
+}
+.video_cam {
+        margin-left: 50px;
+        margin-top: 5px;
+}
+.video_cam span {
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 20px;
+        display: none;
+}
+.msg_cotainer {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10px;
+        border-radius: 25px;
+        background-color: #82ccdd;
+        padding: 7px;
+        position: relative;
+}
+.msg_cotainer_send {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 10px;
+        border-radius: 25px;
+        background-color: #78e08f;
+        padding: 7px;
+        position: relative;
+}
+.msg_time {
+        position: absolute;
+        left: 0;
+        bottom: -18px;
+        color: #fff;
+        font-size: 12px;
+}
+.msg_time_send {
+        position: absolute;
+        right:0;
+        bottom: -18px;
+        color: #fff;
+        font-size: 12px;
+}
+.msg_head {
+        position: relative;
+}
+#action_menu_membre, #action_menu_room_membre {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+}
+.action_menu_membre_div, .action_menu_room_membre_div {
+        z-index: 1;
+        position: absolute;
+        padding: 15px 0;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        border-radius: 15px;
+        top: 30px;
+        right: 15px;
+        display: none;
+}
+.action_menu_membre_div ul, .action_menu_room_membre_div ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+.action_menu_membre_div ul li, .action_menu_room_membre_div ul li {
+        width: 100%;
+        padding: 10px 15px;
+        margin-bottom: 5px;
+}
+.action_menu_membre_div ul li i, .action_menu_room_membre_div ul li i {
+        padding-right: 10px;
+
+}
+.action_menu_membre_div ul li:hover, .action_menu_room_membre_div ul li:hover {
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.2);
+}
+
+@media(max-width: 576px) {
+      .contacts_card{
+              margin-bottom: 15px !important;                            
+      }
+}
+
